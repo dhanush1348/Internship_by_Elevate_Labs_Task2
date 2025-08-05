@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0b60d1;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.logo {
+  width: 60px;
+  vertical-align: middle;
+}
+
+header h1 {
+  margin: 10px 0 5px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+.todo-container {
+  background: #fff;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 500px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#taskInput, #priorityInput, #deadlineInput {
+  flex: 1 1 auto;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#addTaskBtn {
+  padding: 10px 20px;
+  background-color: #0b60d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eef;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task-text {
+  margin-bottom: 8px;
+}
+
+.timestamp, .priority, .deadline {
+  font-size: 12px;
+  color: #555;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.suspended {
+  background-color: #ffc;
+}
+
+button.compleated, button.delete, button.suspend {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.compleated {
+  background-color: #28a745;
+  color: white;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.suspend {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0b60d1;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.not-done {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.not-done-label {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+}
